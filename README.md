@@ -1,11 +1,25 @@
 # challenge-1-student-grade-generator
+#description
+this progran allows one to place students marks inorder for them to be graded.the program converts marks from o and 100.
 
-Write that prompts the user to input student marks. The input should be between 0 and 100. Then output the correct grade: 
-this project has been developed using css.html and javascript
+#installations 
+open the terminal
+clone the repo by using the following
+ 
+https://github.com/oprahchemirmir/challenge-1-student-grade-generator
 
+then change directory to the repo folder by doing this
 
+ cd challenge -1-student-grade-generator
 
+ open it visual studio code by doing this
+code .
 
+use  the following steps to run the app
 
+npm install
+
+#author
 oprah chemirmir
-Copyright (c) 2022 MIT License Permission is hereby not granted to any person obtaining a copy of this project
+#license
+ics
