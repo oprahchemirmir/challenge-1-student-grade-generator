@@ -1,0 +1,25 @@
+#net salary calculator
+#description
+the program calculates the net salary of an individual by getting the inputs of basics and taxes .
+
+#installation 
+to use this repo your machine requires some simple tests
+ open a terminal/command line interface in your computer 
+ clone the repo by using the following 
+  git clone https://github.com/oprahchemirmir/challenge-1-student-grade-generator
+  change directory to the repo folder 
+  cd challenge-1-student-grade-generator
+  open in visual studio code
+  code .
+  
+  #runnning the application 
+  install the required dependancies from 
+  npm install
+  
+  run the application 
+  npm start
+  #author
+  this project was contributed to by 
+  oprah chemirmir
+  #license
+  ics
