@@ -1,0 +1,26 @@
+#salary detector
+#description 
+this program should point once the speed has gone past the limit of which is 70 km/s.for every 5km/s above the 70km/s
+a point is generated .when 12 points are genereted .license suspended is displayed
+# installations 
+open the terminal in your computer
+clone the repo by using the following
+ https://github.com/oprahchemirmir/challenge-1-student-grade-generator
+ 
+ open it in vs code 
+ code .
+ 
+ open in editor of your choice .
+ 
+install required dependencies from npm 
+npm install
+npm start
+#Author
+oprah chemirmir
+#license 
+ics
+
+
+
+ 
+ 
