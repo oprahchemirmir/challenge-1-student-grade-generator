@@ -6,6 +6,9 @@ a point is generated .when 12 points are genereted .license suspended is display
 open the terminal in your computer
 clone the repo by using the following
  https://github.com/oprahchemirmir/challenge-1-student-grade-generator
+ change directory into the repo folder
+  
+  cd challenge-1-student-grade-generator
  
  open it in vs code 
  code .
