@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code challenge</title>
+    <!-- link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--  container -->
+     <div class="container">
+       <div class="row">
+   
+ 
+      <div class="box">
+        <h2><u>Salary Calculator</u></h2>
+       
+        <div class="sal">
+          <label for="gsalary">Enter Salary:</label>
+          <input type="number"  id="gsalary" placeholder="Enter Gross Salary">
+        </div>
+       <!-- button section -->
+      <button onclick="grossalary()">Calculate</button>
+      <h2><u>Salary Calculator</u></h2>
+        <div class="salaryOutput">
+<!-- grass salary  -->
+          <div class="nhif">
+            <label for="gpay">GROSS SALARY:</label>
+          <span id="gpay"></span>
+          </div>
+          <!-- taxable salary -->
+          <div class="nhif">
+            <label for="taxable">TAXABLE SALARY:</label>
+          <span id="taxable"></span>
+          </div>
+          <!-- nhif output -->
+          <div class="nhif">
+            <label for="payee">PAYEE DEDUCTION:</label>
+          <span id="payee"></span>
+          </div>
+          <!-- nhif deductions output -->
+          <div class="nhif">
+            <label for="nhif">NHIF DEDUCTION:</label>
+          <span id="nhif"></span>
+          </div>
+          <!-- nssf output -->
+          <div class="nhif">
+            <label for="nsf">NSSF:</label>
+            <span id="nsf"></span>
+          </div>
+          <!-- netsalary  -->
+          <div class="nhif">
+            <label for="nsalar">NET SALARY:</label>
+            <span id="nsalar"></span>
+          </div>
+           
+        </div>
+      </div> 
+       </div>
+     </div>
+          
+</body>
+<script src="speed.js"></script>
+<script src="index.js"></script>
+<script src="salary.js"></script>
+</html>

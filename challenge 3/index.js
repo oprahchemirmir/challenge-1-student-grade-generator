@@ -1,157 +1,172 @@
-const prompt = require('prompt-sync')();
-const grade = parseInt(prompt('Enter:'))
-function paye (){
-    let salaryOne = parseInt(document.getElementById("input").value)
-    let S1 = salaryOne * .1
-    let S2= salaryOne * .25
-    let S3 = salaryOne * .3
-     if (salaryOne <=24000){
-         document.getElementById("output").innerHTML = parseFloat(S1).toFixed(2)
-         return  parseFloat(S1).toFixed(2)
-     }
-     else if (salaryOne>=24001 && salaryOne <=32333){
-         document.getElementById("output").innerHTML =parseFloat|(S2)
-         return parseFloat|(S2)
-     }
-     else if (salaryOne >= 32334){
-         document.getElementById("output").innerHTML = parseFloat(S3).toFixed(2)
-         return parseFloat(S3).toFixed(2)
- }
- }
- // NHIF decuction
- function NhifCalc() {
-     let salaryOne = parseInt(document.getElementById("input").value)
-     if(salaryOne<5999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 150'
-     }
-     else if(salaryOne >= 6000 && salaryOne <= 7999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 300'
-     }
-     else if(salaryOne >= 8000 && salaryOne <= 11999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 400'
-     }
-     else if(salaryOne >= 12000 && salaryOne <= 14999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 500'
-     }
-     else if(salaryOne >= 15000 && salaryOne <= 19999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 600'
-     }
-     else if(salaryOne >= 20000 && salaryOne <= 24999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 750'
-     }
-     else if(salaryOne >= 25000 && salaryOne <= 29999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 850'
-     }
-     else if(salaryOne >= 30000 && salaryOne <= 34999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 900'
-     }
-     else if(salaryOne >= 35000 && salaryOne <= 39999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 950'
-     }
-     else if(salaryOne >= 40000 && salaryOne <= 44999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 1000'
-     }
-     else if(salaryOne >= 45000 && salaryOne <= 49999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 1100'
-     }
-     else if(salaryOne >= 50000 && salaryOne <=  59999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 1200'
-     }
-     else if(salaryOne >= 60000 && salaryOne <= 69999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 1300'
-     }
-     else if(salaryOne >= 70000 && salaryOne <= 79999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 1400'
-     }
-     else if(salaryOne >= 80000 && salaryOne <= 89999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 1500'
-     }
-     else if(salaryOne >= 90000 && salaryOne <= 99999){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 1600'
-     }
-     else if(salaryOne >= 100000){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 1700'
-     }
- }
- // NSSF contribution as per old rates due to ongoing litigation some employers continue to use the old rates.
- function NssfCal(){
-     let salaryOne = parseInt(document.getElementById("input").value)
-     if(salaryOne>=1){
-         document.getElementById("output").innerHTML = 'NHIF Deduction is Ksh. 400'
-     }
- }
- let NhifBycalc =()=>{
-     let salaryOne = parseInt(document.getElementById("input").value)
-     if(salaryOne<5999){
-         document.getElementById("output").innerHTML = parseFloat(150 ).toFixed(2)
-         return parseFloat(150 ).toFixed(2)
-     }
-     else if(salaryOne >= 6000 && salaryOne <= 7999){
-         document.getElementById("output").innerHTML = parseFloat(300 ).toFixed(2)
-         return parseFloat(300 ).toFixed(2)
-     }
-     else if(salaryOne >= 8000 && salaryOne <= 11999){
-         document.getElementById("output").innerHTML = parseFloat(400 ).toFixed(2)
-         return parseFloat(400 ).toFixed(2)
-     }
-     else if(salaryOne >= 12000 && salaryOne <= 14999){
-         document.getElementById("output").innerHTML = parseFloat(500 ).toFixed(2)
-         return parseFloat(500 ).toFixed(2)
-     }
-     else if(salaryOne >= 15000 && salaryOne <= 19999){
-         document.getElementById("output").innerHTML = parseFloat(600 ).toFixed(2)
-         return parseFloat(600 ).toFixed(2)
-     }
-     else if(salaryOne >= 20000 && salaryOne <= 24999){
-         document.getElementById("output").innerHTML = parseFloat(750 ).toFixed(2)
-         return parseFloat(750 ).toFixed(2)
-     }
-     else if(salaryOne >= 25000 && salaryOne <= 29999){
-         document.getElementById("output").innerHTML = parseFloat(850 ).toFixed(2)
-         return parseFloat(850 ).toFixed(2)
-     }
-     else if(salaryOne >= 30000 && salaryOne <= 34999){
-         document.getElementById("output").innerHTML = parseFloat(900 ).toFixed(2)
-         return  parseFloat(900).toFixed(2)
-     }
-     else if(salaryOne >= 35000 && salaryOne <= 39999){
-         document.getElementById("output").innerHTML = parseFloat(950 ).toFixed(2)
-         return parseFloat(950 ).toFixed(2)
-     }
-     else if(salaryOne >= 40000 && salaryOne <= 44999){
-         document.getElementById("output").innerHTML = parseFloat(1000).toFixed(2)
-         return parseFloat(1000).toFixed(2)
-     }
-     else if(salaryOne >= 45000 && salaryOne <= 49999){
-         document.getElementById("output").innerHTML = parseFloat(1100 ).toFixed(2)
-         return parseFloat(1100 ).toFixed(2)
-     }
-     else if(salaryOne >= 50000 && salaryOne <=  59999){
-         document.getElementById("output").innerHTML = parseFloat(1200 ).toFixed(2)
-         return  parseFloat(200 ).toFixed(2)
-     }
-     else if(salaryOne >= 60000 && salaryOne <= 69999){
-         document.getElementById("output").innerHTML = parseFloat(1300 ).toFixed(2)
-         return parseFloat(1300 ).toFixed(2)
-     }
-     else if(salaryOne >= 70000 && salaryOne <= 79999){
-         document.getElementById("output").innerHTML = parseFloat(1400 ).toFixed(2)
-         return parseFloat(1400 ).toFixed(2)
-     }
-     else if(salaryOne >= 80000 && salaryOne <= 89999){
-         document.getElementById("output").innerHTML = parseFloat(1500 ).toFixed(2)
-         return parseFloat(1500 ).toFixed(2)
-     }
-     else if(salaryOne >= 90000 && salaryOne <= 99999){
-         document.getElementById("output").innerHTML = parseFloat(1600 ).toFixed(2)
-         return parseFloat(1600 ).toFixed(2)
-     }
- }
- // calculates the total deduction and return amount remain.
- function deduction(){
-     // let salaryOne = parseInt(document.getElementById("input").value)
-     const deduction = parseInt(paye()) +parseInt(NhifBycalc())  + 400
-     console.log("========payee=====",paye())
-     console.log("========nhif=====",NhifBycalc())
-     document.getElementById("output").innerHTML = (deduction)
- }
+
+
+const salary = document.getElementById("gsalary").value;
+/* let pin = document.getElementById("hnif").value;  */
+
+
+const grossalary = () => {
+    const salary = document.getElementById("gsalary").value;
+    if (document.getElementsByTagName('input').value == "") {
+        alert("Please Enter your salary amount eg.1234");
+    }
+    document.getElementById("gpay").innerHTML = `${salary}`;
+    nssf();
+    nhif();
+    payee();
+    tax();
+    nsalary();
+
+    /* KRA CALCULATIONS */
+    function tax() {
+        const salary = document.getElementById("gsalary").value;
+        let tax1 = salary - nssf();
+        let tax = tax1 - nhif();
+        if (salary >= 1) {
+            document.getElementById("taxable").innerHTML = `${tax}`;
+            return `${tax}`;
+        }
+        else if (salary <= 0) {
+            document.getElementById("taxable").innerHTML = "";
+            return "";
+        }
+    };
+
+    /* PAYEE CALCULATIONS */
+    /* ELSE IF IMPLEMENTATION */
+    function payee() {
+
+
+        const insuranceRelief = nhif() * 0.15;
+        const taxablePay = salary - nssf();
+        const personalRelief = 2400;
+        if (taxablePay >= 0 && taxablePay <= 24000) {
+            let paye = ((taxablePay * 0.1) - personalRelief - insuranceRelief);
+            document.getElementById("payee").innerHTML = `${paye}`;
+            return paye;
+        } else if (taxablePay > 24000 && taxablePay <= 32333) {
+            let paye1 = ((taxablePay - 24000) * 0.25) + ((24000 * 0.1)) - personalRelief - insuranceRelief;
+            document.getElementById("payee").innerHTML = `${paye1}`;
+            return paye1;
+        } else if (taxablePay > 32333) {
+            let paye2 = ((24000 * 0.1) + (8333 * 0.25) + ((taxablePay - 32333) * 0.3) - personalRelief - insuranceRelief);
+            document.getElementById("payee").innerHTML = `${paye2}`;
+            return paye2;
+        } else {
+            document.getElementById("payee").innerHTML = "";
+            return "";
+        }
+    };
+    /* NHIF CALCULATIONS */
+    function nhif() {
+        const salary = document.getElementById("gsalary").value;
+        if (salary >= 1 && salary <= 5999) {
+            document.getElementById("nhif").innerHTML = "150";
+            return 150;
+        }
+        else if (salary >= 6000 && salary <= 7999) {
+            document.getElementById("nhif").innerHTML = "300";
+            return 300;
+        }
+        else if (salary >= 8000 && salary <= 11999) {
+            document.getElementById("nhif").innerHTML = "400";
+            return 400;
+        }
+        else if (salary >= 12000 && salary <= 14999) {
+            document.getElementById("nhif").innerHTML = "500";
+            return 500;
+        }
+        else if (salary >= 15000 && salary <= 19999) {
+            document.getElementById("nhif").innerHTML = "600";
+            return 600;
+        }
+        else if (salary >= 20000 && salary <= 24999) {
+            document.getElementById("nhif").innerHTML = "750";
+            return 750;
+        }
+        else if (salary >= 25000 && salary <= 29999) {
+            document.getElementById("nhif").innerHTML = "850";
+            return 850;
+        }
+        else if (salary >= 30000 && salary <= 34999) {
+            document.getElementById("nhif").innerHTML = "900";
+            return 900;
+        }
+        else if (salary >= 35000 && salary <= 39999) {
+            document.getElementById("nhif").innerHTML = "950";
+            return 950;
+        }
+        else if (salary >= 40000 && salary <= 44999) {
+            document.getElementById("nhif").innerHTML = "1000";
+            return 1000;
+        }
+        else if (salary >= 45000 && salary <= 49999) {
+            document.getElementById("nhif").innerHTML = "1100";
+            return 1100;
+        }
+        else if (salary >= 50000 && salary <= 59999) {
+            document.getElementById("nhif").innerHTML = "1200";
+            return 1200;
+        }
+        else if (salary >= 60000 && salary <= 69999) {
+            document.getElementById("nhif").innerHTML = "1300";
+            return 1300;
+        }
+        else if (salary >= 70000 && salary <= 79999) {
+            document.getElementById("nhif").innerHTML = "1400";
+            return 1400;
+        }
+        else if (salary >= 80000 && salary <= 89999) {
+            document.getElementById("nhif").innerHTML = "1500";
+            return 1500;
+        }
+        else if (salary >= 90000 && salary <= 99999) {
+            document.getElementById("nhif").innerHTML = "1600";
+            return 1600;
+        }
+
+        else {
+            document.getElementById("nhif").innerHTML = "";
+            return ""
+        }
+
+    };
+    /* NSSF CALCULATIONS */
+    function nssf() {
+        const salary = document.getElementById("gsalary").value;
+        let nss = (salary / 100) * 6;
+        let tier1 = 360;
+        let tier2 = 720;
+        let total = tier1 + tier2;
+        if (salary >= 1 && salary <= 17999) {
+            document.getElementById("nsf").innerHTML = `${nss}`;
+            return nss;
+        }
+        else if (salary >= 18000) {
+            document.getElementById("nsf").innerHTML = `${total}`;
+            return total;
+        }
+        else {
+            document.getElementById("nsf").innerHTML = "";
+            return "";
+        }
+
+    };
+//calculate the net salary//
+
+    function nsalary() {
+        const salary = document.getElementById("gsalary").value;
+        let itax = tax();
+        let over = itax - payee();
+
+        if (salary >= 1) {
+            document.getElementById("nsalar").innerHTML = `${over}`;
+            return over;
+
+        }
+        else {
+            document.getElementById("nsalar").innerHTML = "";
+            return "";
+        }
+    };
+
+}

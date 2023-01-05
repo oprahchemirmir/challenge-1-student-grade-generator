@@ -1,0 +1,22 @@
+
+
+button {
+    background-color: rgb(109, 109, 128);
+    height: 20px;
+    width: 20%;
+    font-size: large;
+    color: aliceblue;
+    text-align: center;
+}
+body {
+    justify-content: center;
+    align-items: center;
+}
+input {
+  background-color: rgb(74, 147, 211);
+  color: black;
+  text-align: center;
+}
+span {
+    color: rgb(12, 11, 11);
+}
